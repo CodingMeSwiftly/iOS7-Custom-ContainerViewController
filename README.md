@@ -10,9 +10,9 @@ iOS7 Custom ContainerViewController
  Therefore, only the pushing (animated) and popping (interactive) of childViewControllers is implemented
  and the interface is kept as simple as possible.
  
- Note that there are some things in this example that do not follow Apple's container implementation style for the sake of simplicity.
+ Note that there are some things in this example that do not follow Apple's container implementation style for the sake of simplicity:
  
- 1.  An custom transitionController object is used to control the animation and interaction during pushing and popping.
+ 1.  A custom transitionController object is used to control the animation and interaction during pushing and popping.
 Also, the container provides the built-in ability to interactively pop a viewController (like UINavigationController).
 If you want to write a more "distributable" containerController which can be used by 3rd parties, you should add a delegate to your container which can be asked to provide an animation / transitionController, like UINavigationController and UITabbarController do.
  2.  This container implements the \<UIViewControllerContextTransitioning\> protocol.
