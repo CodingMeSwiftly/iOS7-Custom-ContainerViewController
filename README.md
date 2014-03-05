@@ -1,4 +1,4 @@
-iOS7-Custom-ContainerViewController
+iOS7 Custom- ContainerViewController
 ===================================
 
  An example for implementing a custom, animation and interaction enabled Container ViewController in iOS7.
