@@ -470,6 +470,11 @@
             [toViewController didMoveToParentViewController:self];
             
             //  Update the stack
+            
+            //  Not needed here, because the pushViewController:animated: method already added the toViewController to the stack.
+            //  Typically, it's best to upate the stack as SOON as possible when doing animated transitions (not cancelable)
+            //  and as LATE as possible for interactive transitions (cancelable)
+            //  This makes sure the stack is in a valid state as long as possible.
             //        [_viewControllerStack addObject:toViewController];
         } else {
             
